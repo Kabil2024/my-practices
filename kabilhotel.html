@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KABIL HOTEL</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to KABIL HOTEL</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#food">Food Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About KABIL HOTEL</h2>
+        <p>Welcome to KABIL HOTEL, the newest and most luxurious hotel in the city. Our mission is to provide
+            exceptional hospitality with modern amenities, top-notch customer service, and a range of facilities to make
+            your stay unforgettable.</p>
+        <p>We offer a variety of rooms, services, and delicious meals to cater to every guest's needs. Whether you are
+            here for business or leisure, we ensure you have a pleasant experience.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <p>We have a variety of rooms to suit your needs:</p>
+        <ul>
+            <li><strong>Standard Room:</strong> A cozy room with all basic amenities.</li>
+            <li><strong>Deluxe Room:</strong> Spacious with a beautiful city view and extra features.</li>
+            <li><strong>Luxury Suite:</strong> Premium room with luxury features, including a jacuzzi.</li>
+        </ul>
+        <h3>Book a Room</h3>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="room_type">Choose Room Type:</label>
+            <select id="room_type" name="room_type" required>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="luxury">Luxury Suite</option>
+            </select><br><br>
+
+            <label for="check_in">Check-In Date:</label>
+            <input type="date" id="check_in" name="check_in" required><br><br>
+
+            <label for="check_out">Check-Out Date:</label>
+            <input type="date" id="check_out" name="check_out" required><br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="food">
+        <h2>Our Food Menu</h2>
+        <p>We offer a variety of delicious food options to satisfy your taste. Check out some of our popular dishes:</p>
+        <ul>
+            <li><strong>Breakfast:</strong> Pancakes, Omelettes, Fresh Juices</li>
+            <li><strong>Lunch:</strong> Grilled Chicken Salad, Pasta, Burgers</li>
+            <li><strong>Dinner:</strong> Steak, Sea Food Platters, Vegetarian Delights</li>
+            <li><strong>Desserts:</strong> Chocolate Cake, Ice Cream, Fruit Salads</li>
+        </ul>
+        <h3>Order Food</h3>
+        <form action="#" method="post">
+            <label for="food_choice">Select Dish:</label>
+            <select id="food_choice" name="food_choice" required>
+                <option value="pancakes">Pancakes</option>
+                <option value="grilled_chicken">Grilled Chicken Salad</option>
+                <option value="steak">Steak</option>
+                <option value="chocolate_cake">Chocolate Cake</option>
+            </select><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions or feedback? Reach out to us through the form below:</p>
+        <form action="#" method="post">
+            <label for="contact_name">Your Name:</label>
+            <input type="text" id="contact_name" name="contact_name" required><br><br>
+
+            <label for="contact_email">Your Email:</label>
+            <input type="email" id="contact_email" name="contact_email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KABIL HOTEL. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Dialog Box Example -->
+    <button onclick="alert('Thank you for visiting KABIL HOTEL! We hope to serve you soon!')"
+        style="cursor: pointer;">Click to Get a Message</button>
+
+</body>
+
+</html>
